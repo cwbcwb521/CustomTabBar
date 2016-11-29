@@ -16,6 +16,9 @@
 		5B33FF931DEC4DE50026EFA7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B33FF921DEC4DE50026EFA7 /* MainViewController.m */; };
 		5B33FF961DEC4F050026EFA7 /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B33FF951DEC4F050026EFA7 /* CustomTabBar.m */; };
 		5B33FF991DEC523E0026EFA7 /* CustomTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B33FF981DEC523E0026EFA7 /* CustomTabBarItem.m */; };
+		5B33FFBA1DED97C50026EFA7 /* FirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B33FFB91DED97C50026EFA7 /* FirstView.m */; };
+		5B33FFBD1DED97D10026EFA7 /* SecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B33FFBC1DED97D10026EFA7 /* SecondView.m */; };
+		5B33FFC01DED97D90026EFA7 /* ThirdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B33FFBF1DED97D90026EFA7 /* ThirdView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,12 @@
 		5B33FF951DEC4F050026EFA7 /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
 		5B33FF971DEC523E0026EFA7 /* CustomTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarItem.h; sourceTree = "<group>"; };
 		5B33FF981DEC523E0026EFA7 /* CustomTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarItem.m; sourceTree = "<group>"; };
+		5B33FFB81DED97C50026EFA7 /* FirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstView.h; sourceTree = "<group>"; };
+		5B33FFB91DED97C50026EFA7 /* FirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstView.m; sourceTree = "<group>"; };
+		5B33FFBB1DED97D10026EFA7 /* SecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondView.h; sourceTree = "<group>"; };
+		5B33FFBC1DED97D10026EFA7 /* SecondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondView.m; sourceTree = "<group>"; };
+		5B33FFBE1DED97D90026EFA7 /* ThirdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdView.h; sourceTree = "<group>"; };
+		5B33FFBF1DED97D90026EFA7 /* ThirdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +165,12 @@
 				5B33FF951DEC4F050026EFA7 /* CustomTabBar.m */,
 				5B33FF971DEC523E0026EFA7 /* CustomTabBarItem.h */,
 				5B33FF981DEC523E0026EFA7 /* CustomTabBarItem.m */,
+				5B33FFB81DED97C50026EFA7 /* FirstView.h */,
+				5B33FFB91DED97C50026EFA7 /* FirstView.m */,
+				5B33FFBB1DED97D10026EFA7 /* SecondView.h */,
+				5B33FFBC1DED97D10026EFA7 /* SecondView.m */,
+				5B33FFBE1DED97D90026EFA7 /* ThirdView.h */,
+				5B33FFBF1DED97D90026EFA7 /* ThirdView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -305,9 +320,12 @@
 			files = (
 				5B33FF961DEC4F050026EFA7 /* CustomTabBar.m in Sources */,
 				5B33FF991DEC523E0026EFA7 /* CustomTabBarItem.m in Sources */,
+				5B33FFBD1DED97D10026EFA7 /* SecondView.m in Sources */,
 				5B33FF601DEC4C590026EFA7 /* AppDelegate.m in Sources */,
+				5B33FFC01DED97D90026EFA7 /* ThirdView.m in Sources */,
 				5B33FF931DEC4DE50026EFA7 /* MainViewController.m in Sources */,
 				5B33FF5D1DEC4C590026EFA7 /* main.m in Sources */,
+				5B33FFBA1DED97C50026EFA7 /* FirstView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

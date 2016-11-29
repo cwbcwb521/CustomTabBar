@@ -11,7 +11,7 @@
 
 @interface MainViewController () <CustomTabBarDelegate>
 
-@property (nonatomic, strong) UILabel *label;
+@property (nonatomic, strong) NSMutableArray *viewArray;
 
 @end
 
@@ -21,11 +21,6 @@
     [super viewDidLoad];
     
     [self.view setBackgroundColor:[UIColor whiteColor]];
-    
-    [self setLabel:[[UILabel alloc]initWithFrame:CGRectMake(100, 100, 150, 150)]];
-    [self.label setBackgroundColor:[UIColor whiteColor]];
-    [self.label setText:@"oc"];
-    [self.view addSubview:self.label];
     
     CustomTabBar *tabBar = [CustomTabBar tabBarWithTitles:@[@"first", @"second", @"third" ]];
     [tabBar setDelegate:self];
@@ -40,11 +35,30 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSMutableArray *)viewArray
+{
+    if (!_viewArray) {
+        _viewArray = [NSMutableArray array];
+        
+        NSArray *classNameArray = @[@"FirstView", @"SecondView", @"ThirdView"];
+        for(NSInteger i = 0; i < classNameArray.count; i++){
+            UIView *view = [[NSClassFromString(classNameArray[i]) alloc]init];
+            [self.view addSubview:view];        //将view添加到视图
+            [_viewArray addObject:view];        //将view添加到数组中
+        }
+    }
+    
+    return _viewArray;
+}
+
+
 #pragma mark - Tab bar delegate - 
 
 - (void)tabBar:(CustomTabBar *)tabBar itemSelectedAtIndex:(NSUInteger)index
 {
-    [self.label setText:[NSString stringWithFormat:@"%zd", index]];
+    UIView *view = self.viewArray[index];       //从数组中取出当前点击的view
+    [self.view bringSubviewToFront:view];       //把子视图带到最前方
+    [self.view bringSubviewToFront:tabBar];     //把tabbar带到最前方
 }
 
 @end
